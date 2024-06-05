@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ZeroBuzz Brew</title>
+  <link rel="shortcut icon" href="/images/zbblogo.png">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="google.css">
+  <style>
+    body {
+      background-color: #F6F6F6;
+    }
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="menuicon" onclick="togglemenu()">☰</div>
+        <a href="index.html" class="logocontainer">
+          <img src="images/zbblogo.png" alt="Logo" class="logo">
+        </a>
+        <section class="navlinks">
+          <section class="navitem">
+            <button onclick="navigateto('produkter.html')">ALKOHOLFRI ØL</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('produkter.html')">IPA</button>
+              <button onclick="navigateto('produkter.html')">PILSNER</button>
+              <button onclick="navigateto('produkter.html')">BÆR- & FRUGTSMAG</button>
+            </section>
+          </section>
+          <section class="navitem">
+            <button onclick="navigateto('bygdinegen.html')">BYG-DIN-EGEN ØLKASSE</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('bygdinegen.html')">PRØVEPAKKE</button>
+              <button onclick="navigateto('bygdinegen.html')">ABONNEMENTER</button>
+            </section>
+          </section>
+          <section class="navitem">
+            <button onclick="navigateto('faq.html')">FAQ</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('#')">HVAD SIGER KUNDERNE?</button>
+            </section>
+          </section>
+          <section class="navitem">
+            <button onclick="navigateto('#')">OM OS</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('#')">BÆREDYGTIGHED</button>
+            </section>
+          </section>
+        </section>
+        <section class="navicons">
+          <img src="images/bruger.png" alt="login">
+          <img src="images/searchikon.png" alt="search">
+        </section>
+      </nav>
+    
+
+<h1 class="bygoverskrift">BYG-DIN-EGEN ALKOHOLFRI ØLKASSE...</h1>
+
+<section class="buttoncontainer">
+    <button class="togglebutton" id="button1">PRØVEPAKKE</button>
+    <button class="togglebutton" id="button2">ABONNEMENT</button>
+</section>
+
+<br>
+
+<p class="pbygtekst"> Vælg smagsvarianterne, du ønsker i ølkassen:</p>
+
+<section id="slideshow">
+    <img src="images/ipa.png" alt="ølflaske" class="slide active">
+    <img src="images/citrusflaske.png" alt="ølflaske" class="slide">
+    <img src="images/pils.png" alt="ølflaske" class="slide">
+    <img src="images/ipahaze.png" alt="ølflaske" class="slide">
+    <img src="images/peach.png" alt="ølflaske" class="slide">
+    <img src="images/pilsbohe.png" alt="ølflaske" class="slide">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+    <button id="chooseproduct">VÆLG PRODUKT</button>
+</section>
+
+<h2 class="h2byg">Smagsguide</h2>
+
+<img src="images/citrusflaske.png" alt="citrussmag" class="beer1">
+<img src="images/peach.png" alt="peachsmag" class="beer1">
+<p class="pbtekst">Den søde, lette og friske</p>
+
+<br> <br> 
+
+
+<img src="images/ipa.png" alt="ipa" class="beer2">
+<img src="images/ipahaze.png" alt="ipahaze" class="beer2">
+<p class="pbtekst">Den autentiske, frugtige og bitre humlesmag</p>
+
+<br> <br> 
+
+
+<img src="images/pils.png" alt="pilsner" class="beer3">
+<img src="images/pilsbohe.png" alt="pilsnerbohemian" class="beer3">
+<p class="pbtekst">Den rene, diskrete og klassiske </p>
+
+
+<img src="images/kurv.png" alt="kurv" class="bottomicon">
+
+
+<script src="js/js.js"></script>
+
+
+<footer class="sitefooter">
+    <section class="footercolumn">
+        <h4>Kundeservice</h4>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Kontakt os</a></li>
+        </ul>
+    </section>
+    <section class="footercolumn">
+        <h4>Mere information</h4>
+        <ul>
+            <li><a href="#">Om os</a></li>
+            <li><a href="#">Privatlivspolitik</a></li>
+        </ul>
+    </section>
+    <section class="footercolumn">
+        <h4>Følg os</h4>
+        <img src="images/igikon.png" alt="instagramikon">
+        <img src="images/tt.png" alt="tiktokikon">
+        <img src="images/linkedin.png" alt="linkedinlogo">
+    </section>
+</footer>
+
+
+
+</html>

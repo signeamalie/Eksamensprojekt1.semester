@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ZeroBuzz Brew</title>
+  <link rel="shortcut icon" href="/images/zbblogo.png">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="google.css">
+  <style>
+    body {
+      background-color: #F6F6F6;
+    }
+  </style>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="menuicon" onclick="togglemenu()">☰</div>
+        <a href="index.html" class="logocontainer">
+          <img src="images/zbblogo.png" alt="Logo" class="logo">
+        </a>
+        <section class="navlinks">
+          <section class="navitem">
+            <button onclick="navigateto('produkter.html')">ALKOHOLFRI ØL</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('produkter.html')">IPA</button>
+              <button onclick="navigateto('produkter.html')">PILSNER</button>
+              <button onclick="navigateto('produkter.html')">BÆR- & FRUGTSMAG</button>
+            </section>
+          </section>
+          <section class="navitem">
+            <button onclick="navigateto('bygdinegen.html')">BYG-DIN-EGEN ØLKASSE</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('bygdinegen.html')">PRØVEPAKKE</button>
+              <button onclick="navigateto('bygdinegen.html')">ABONNEMENTER</button>
+            </section>
+          </section>
+          <section class="navitem">
+            <button onclick="navigateto('faq.html')">FAQ</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('#')">HVAD SIGER KUNDERNE?</button>
+            </section>
+          </section>
+          <section class="navitem">
+            <button onclick="navigateto('#')">OM OS</button>
+            <section class="dropdowncontent">
+              <button onclick="navigateto('#')">BÆREDYGTIGHED</button>
+            </section>
+          </section>
+        </section>
+        <section class="navicons">
+          <img src="images/bruger.png" alt="login">
+          <img src="images/searchikon.png" alt="search">
+        </section>
+      </nav>
+    
+      
+  <h1 class="faq">Har du et spørgsmål?</h1>
+
+  <section id="faqbillede"></section>
+
+
+<h1 class="faq">Fik du ikke svar på dit spørgsmål...</h1>
+
+<h2 class="faqtekst">Så er du velkommen til at henvende dig til os, hvor vi vil vende tilbage på e-mail.</h2>
+
+<form action="submit_form.php" method="POST" class="feedbackform">
+    <label for="response">DIT SPØRGSMÅL:</label>
+    <textarea id="response" name="response" placeholder="Skriv dit spørgsmål her..."></textarea>
+
+    <div class="userinfo">
+        <div class="inputgroup">
+            <label for="name">NAVN:</label>
+            <input type="text" id="name" name="name" placeholder="...">
+        </div>
+        <div class="inputgroup">
+            <label for="email">E-MAIL:</label>
+            <input type="email" id="email" name="email" placeholder="...">
+        </div>
+    </div>
+
+    <button type="submit" class="submitbtn">Send</button>
+</form>
+
+  
+  <img src="images/kurv.png" alt="kurv" class="bottomicon">
+
+
+  <script src="js/js.js"></script>
+
+  
+
+  <footer class="sitefooter">
+    <section class="footercolumn">
+        <h4>Kundeservice</h4>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Kontakt os</a></li>
+        </ul>
+    </section>
+    <section class="footercolumn">
+        <h4>Mere information</h4>
+        <ul>
+            <li><a href="#">Om os</a></li>
+            <li><a href="#">Privatlivspolitik</a></li>
+        </ul>
+    </section>
+    <section class="footercolumn">
+        <h4>Følg os</h4>
+        <img src="images/igikon.png" alt="instagramikon">
+        <img src="images/tt.png" alt="tiktokikon">
+        <img src="images/linkedin.png" alt="linkedinlogo">
+    </section>
+</footer>
+
+    
+
+  </body>
+  </html>
+  
