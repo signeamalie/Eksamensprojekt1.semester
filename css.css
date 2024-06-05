@@ -1,0 +1,488 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+ 
+ html body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); 
+  padding: 10px;
+  position: fixed; 
+  width: 100%;
+  z-index: 10; 
+  top: 0%;
+}
+
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* BURGERMENU */
+.menuicon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+}
+
+.navlinks {
+  display: flex;
+  flex: 3;
+  font-family: Mukta;
+  justify-content: space-around;
+}
+
+.navitem {
+  position: relative;
+}
+
+.navitem button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navitem .dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navitem:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdowncontent button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdowncontent button:hover {
+  background-color: #f1f1f1;
+}
+
+.navicons img {
+  height: 24px;
+  margin-left: 10px;
+}
+
+/* MEDIA QUERY, BURGERMENU */
+@media screen and (max-width: 768px) {
+  .menuicon {
+    display: block;
+  }
+  .logocontainer {
+    order: 1;
+    flex: 2;
+  }
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #3333334d;
+  }
+  .navlinks.active {
+    display: flex;
+  }
+  .navitem {
+    margin: 10px 0;
+  }
+}
+
+/* FORSIDEBILLEDE */
+#forside {
+  height: 120vh;
+  width: 100%;
+  background-image: url("../images/flasker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+  z-index: 1; 
+}
+
+#ipabillede {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130vh;
+  width: 100vw;
+  background-image: url("../images/ipa2flasker.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1; 
+}
+
+.forsidetekst {
+  font-family: Righteous;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  color: #FDFFB3;
+  position: relative;
+  z-index: 5; 
+}
+
+
+.forsideundertekst {
+  font-family: Righteous;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #FDFFB3;
+  position: relative;
+  z-index: 5; 
+}
+
+.imagebutton {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #86161f;
+  color: #FDFFB3;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: Mukta;
+  text-transform: uppercase;
+  z-index: 5; 
+}
+
+/* SHOPPINGKURV IKON */
+.bottomicon {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: auto;
+  z-index: 5; 
+}
+
+
+/* KNAPPER MED VEDVARENDE HOVEREFFEKT */
+.togglebutton {
+  padding: 10px 40px;
+  border: 1px solid #86161F; 
+  background-color: #F6F6F6;
+  cursor: pointer;
+  margin: 10px 20px 20px;
+  display: inline-block;
+  font-family: Mukta;
+  font-size: medium;
+}
+
+.togglebutton.active {
+  background-color: #86161F;
+}
+
+.buttoncontainer {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+
+/* SLIDESHOW MED SMAGSVARIANTER */
+#slideshow {
+  position: relative;
+  text-align: center;
+  max-width: 70%; 
+  margin: -20px auto 20px;
+}
+
+.slide {
+  display: none;
+  max-width: 80%; 
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.slide.active {
+  display: block;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev { left: 0; }
+#next { right: 0; }
+
+#chooseproduct {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-family: Mukta;
+}
+
+#prev, #next, #chooseproduct {
+  background-color: #c3c3c600;
+  border: 1px solid #86161F;
+  color: #86161F;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+/* MEDIA QUERY, MOBILE RESPONSIV */
+@media screen and (max-width: 760px) {
+  #chooseproduct {
+    background-color: #86161F; 
+    color: #FDFFB3; 
+    bottom: 1px; 
+    }
+}
+
+.beer1, .beer2, .beer3 {
+  position: relative;
+  left: 28%;
+  max-width: 20%; 
+  margin: 0 auto;
+  margin-top: 5px; 
+}
+
+/* TEKST PÅ BYG DIN EGEN-SIDEN */
+.bygoverskrift {
+  font-family: Righteous;
+  font-size: 45px;
+  padding-top: 10%;
+  text-align: center;
+  margin-bottom: 20px; 
+  color: #86161F;
+}
+
+.h2byg {
+  text-align: center;
+  margin-top: 50px; 
+  margin-right: 35%;
+  font-family: Righteous;
+  color: #86161F;
+  margin-bottom: 40px;
+
+}
+
+.pbygtekst {
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 23%;
+  font-family: Comfortaa;
+}
+
+.pbtekst {
+  text-align: left;
+  margin-left: 28%; 
+  font-family: Comfortaa;
+  margin-bottom: 10px; 
+}
+
+/* PRODUKTSIDEN */
+
+#ipaproduktbillede {
+  height: 55vh;
+  width: 100%;
+  background-image: url("../images/flaskerprodukter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  margin-top: 70px;
+}
+
+.produkttekst {
+  font-family: Righteous;
+  font-size: 45px;
+  text-align: left;
+  margin-bottom: 80px; 
+  color: #1B6609;
+}
+
+.produktundertekst {
+font-family: Mukta;
+
+}
+
+.produktcontainer {
+  display: flex;        
+  align-items: center;
+  gap: 20px;
+  justify-content: center; 
+  font-family: Comfortaa;
+}
+
+
+.produkt {
+  width: 100%;
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  margin-top: 5px; 
+  padding-bottom: 7%;
+}
+
+/* FAQ */
+
+.faq {
+  font-family: Righteous;
+  font-size: 60px;
+padding-top: 8%;
+}
+
+.faqtekst {
+  font-family: Comfortaa;
+  font-size: 20px;
+}
+
+#faqbillede {
+  height: 130vh;
+  width: 100%;
+  background-image: url("../images/faqbillede.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:top;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+/* MOBILVENLIG BILLEDE */
+@media screen and (max-width: 768px) {
+  #faqbillede {
+    background-image: url("../images/faqbilledemobile.png");
+  }
+}
+
+
+.feedbackform {
+  max-width: 800px;
+  margin: 60px auto; 
+  padding: 30px; 
+  font-family: Mukta;
+  border: none; 
+}
+
+.feedbackform label {
+  display: block;
+  margin-bottom: 10px; 
+  font-weight: bold;
+}
+
+.feedbackform textarea {
+  width: 100%;
+  height: 200px; 
+  padding: 15px; 
+  margin-bottom: 30px; 
+  box-sizing: border-box;
+  font-size: 16px; 
+  font-family: Mukta;
+}
+
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; 
+}
+
+.inputgroup {
+  flex-basis: 48%; 
+}
+
+.inputgroup input {
+  width: 100%;
+  padding: 12px; 
+  box-sizing: border-box;
+  font-size: 16px; 
+}
+
+.submitbtn {
+  float: right;
+  padding: 12px 24px;
+  background-color: #86161F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; 
+}
+
+.submitbtn:hover {
+  background-color: #5a0d14;
+}
+
+/* FOOTER */
+
+.sitefooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #FDFFB3;
+  color: #86161F;
+  font-family: Arial, sans-serif;
+}
+
+.footercolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footercolumn h4 {
+  margin-bottom: 15px;
+}
+
+.footercolumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footercolumn ul li a {
+  color: #86161F;
+  text-decoration: none;
+  line-height: 2;
+}
+
+.footercolumn ul li a:hover {
+  text-decoration: underline;
+}
+
+.footercolumn img {
+  width: 25px; 
+  height: auto;
+  margin-top: 10px;
+}
