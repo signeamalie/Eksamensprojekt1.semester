@@ -42,7 +42,7 @@
 .navlinks {
   display: flex;
   flex: 3;
-  font-family: Mukta;
+  font-family: Mukta, sans-serif;
   justify-content: space-around;
 }
 
@@ -143,7 +143,7 @@
 }
 
 .forsidetekst {
-  font-family: Righteous;
+  font-family: Righteous, sans-serif;
   font-size: 30px;
   text-align: center;
   padding-top: 20px;
@@ -154,7 +154,7 @@
 
 
 .forsideundertekst {
-  font-family: Righteous;
+  font-family: Righteous,sans-serif;
   font-size: 15px;
   text-align: center;
   padding-top: 10px;
@@ -175,7 +175,7 @@
   border: none;
   cursor: pointer;
   font-size: 30px;
-  font-family: Mukta;
+  font-family: Mukta, sans-serif;
   text-transform: uppercase;
   z-index: 5; 
 }
@@ -199,7 +199,7 @@
   cursor: pointer;
   margin: 10px 20px 20px;
   display: inline-block;
-  font-family: Mukta;
+  font-family: Mukta, sans-serif;
   font-size: medium;
 }
 
@@ -249,7 +249,7 @@
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  font-family: Mukta;
+  font-family: Mukta, sans-serif;
 }
 
 #prev, #next, #chooseproduct {
@@ -279,7 +279,7 @@
 
 /* TEKST PÅ BYG DIN EGEN-SIDEN */
 .bygoverskrift {
-  font-family: Righteous;
+  font-family: Righteous, sans-serif;
   font-size: 45px;
   padding-top: 10%;
   text-align: center;
@@ -291,7 +291,7 @@
   text-align: center;
   margin-top: 50px; 
   margin-right: 35%;
-  font-family: Righteous;
+  font-family: Righteous, sans-serif;
   color: #86161F;
   margin-bottom: 40px;
 
@@ -301,13 +301,13 @@
   text-align: center;
   margin-top: 10px;
   margin-right: 23%;
-  font-family: Comfortaa;
+  font-family: Comfortaa, sans-serif;
 }
 
 .pbtekst {
   text-align: left;
   margin-left: 28%; 
-  font-family: Comfortaa;
+  font-family: Comfortaa, sans-serif;
   margin-bottom: 10px; 
 }
 
@@ -326,7 +326,7 @@
 }
 
 .produkttekst {
-  font-family: Righteous;
+  font-family: Righteous, sans-serif;
   font-size: 45px;
   text-align: left;
   margin-bottom: 80px; 
@@ -334,7 +334,7 @@
 }
 
 .produktundertekst {
-font-family: Mukta;
+font-family: Mukta, sans-serif;
 
 }
 
@@ -343,7 +343,7 @@ font-family: Mukta;
   align-items: center;
   gap: 20px;
   justify-content: center; 
-  font-family: Comfortaa;
+  font-family: Comfortaa, sans-serif;
 }
 
 
@@ -361,13 +361,13 @@ p {
 /* FAQ */
 
 .faq {
-  font-family: Righteous;
+  font-family: Righteous, sans-serif;
   font-size: 60px;
 padding-top: 8%;
 }
 
 .faqtekst {
-  font-family: Comfortaa;
+  font-family: Comfortaa, sans-serif;
   font-size: 20px;
 }
 
@@ -395,7 +395,7 @@ padding-top: 8%;
   max-width: 800px;
   margin: 60px auto; 
   padding: 30px; 
-  font-family: Mukta;
+  font-family: Mukta, sans-serif;
   border: none; 
 }
 
@@ -412,7 +412,7 @@ padding-top: 8%;
   margin-bottom: 30px; 
   box-sizing: border-box;
   font-size: 16px; 
-  font-family: Mukta;
+  font-family: Mukta, sans-serif;
 }
 
 .userinfo {
@@ -450,25 +450,36 @@ padding-top: 8%;
 
 .sitefooter {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px; 
   background-color: #FDFFB3;
   color: #86161F;
-  font-family: Arial, sans-serif;
+  font-family: Mukta, sans-serif;
+}
+
+.footercolumns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .footercolumn {
   display: flex;
   flex-direction: column;
+  align-items: center; 
 }
 
 .footercolumn h4 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 16px; 
+  color: #86161F; 
 }
 
 .footercolumn ul {
   list-style: none;
   padding: 0;
+  margin: 0; 
 }
 
 .footercolumn ul li a {
@@ -485,4 +496,10 @@ padding-top: 8%;
   width: 25px; 
   height: auto;
   margin-top: 10px;
+}
+
+.copyright {
+  font-size: 16px; 
+  color: #86161F;
+  text-align: center;
 }
